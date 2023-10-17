@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="crypto.js"></script>
+  <link rel="icon" href="./assets/favicon32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="./assets/favicon64.png" sizes="64x64" type="image/png">
+  <title>Redakt | Encrypt and protect your content against bots, scrappers, algorithms and AI.</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Redakt | Encrypt and protect your content against bots, scrappers, algorithms and AI.">
+  <meta name="keywords" content="Redakt">
+  <meta property="og:image" content="./assets/thumbnail.png" />
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Redakt <span id="version"><a href="https://redakt.org/github/" target="_blank">v1.2.0</a></span></h1>
+  <div class="container">
+    <textarea id="inputText" placeholder="Enter text to encrypt or decrypt"></textarea>
+    <div>
+      <button onclick="decrypt()" title="Decrypt text">Decrypt</button>
+      <button onclick="encrypt()" title="Encrypt text">Encrypt</button>
+    </div>
+    <p id="outputText" onclick="copyText()"></p>
+    <p id="copied" class="copied">✓ Text copied</p>
+    <div><p id="info-text"><strong>Did you know?</strong> You can remove the ".org" from the encrypted text. The decryption will still work.</p></div>
+  </div>
+  <p class="menu">
+    <a href="https://redakt.org/browser/" target="_blank">Browser extension</a> • 
+    <a href="https://redakt.org/demo/" target="_blank">Demo</a> • 
+        <a href="https://redakt.org/api/start/" target="_blank">API</a> • 
+    <a href="https://redakt.org/github/" target="_blank">GitHub</a> • 
+    <a href="https://redakt.org/reddit/" target="_blank">Reddit</a> • 
+    <a href="https://redakt.org/roadmap/" target="_blank">Roadmap</a> • 
+    <a href="https://redakt.org/contact/" target="_blank">Contact</a>
+  </p>
+  <div class="container-faq">
+    <div class="question">
+      <h3>What is Redakt?</h3>
+      <p class="question-text">
+        Redakt is a simple encryption/decryption tool that offers a way to protect any text you publish on the Internet (posts, messages, comments). Redakt protects your content from being easily readable by bots, scrappers, algorithms or AI.
+      </p>
+    </div>
+  <footer>
+    <div class="chrome-web-store chrome-web-store-bottom"><a href="https://redakt.org/browser/" target="_blank"><img src="./assets/chrome-web-store.png" height=65px/></a></div>
+    Redakt is an <a href="https://redakt.org/github/" target="_blank">open source project</a> launched in 2023
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
