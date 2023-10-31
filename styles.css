@@ -169,6 +169,12 @@ footer > a:hover {
   #try {
     display: none;
   } 
+  #menu-link {
+    color: #FF9000;
+  }
+  #menu-link:hover {
+    opacity:0.8;
+  }
 }
 
 #try {
