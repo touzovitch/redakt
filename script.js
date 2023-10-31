@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function decrypt() {
-  const inputText = document.getElementById('inputText').value.replace('redakt.org-','').replace('redakt-','').replace('&&&','');
+  const inputText = document.getElementById('inputText').value.replace('redakt.org-','').replace('redakt-','').replace('r3d4kt-','').replace('r8%h7t-','').replace('&&&','');
   const decryptedText = CryptoJS.AES.decrypt(inputText, key).toString(CryptoJS.enc.Utf8);
   document.getElementById('outputText').textContent = decryptedText;
   document.getElementById("copied").style.display = "none";
