@@ -162,6 +162,10 @@ footer > a:hover {
   padding: 10px 15px 10px 15px;
 }
 
+#menu-link:hover {
+  color: #FF9000;
+}
+
 @media only screen and (max-width: 1024px) {
   h1 {
     font-size: 1.6em;
@@ -173,14 +177,24 @@ footer > a:hover {
     color: #FF9000;
   }
   #menu-link:hover {
-    opacity:0.8;
+    opacity: 0.8;
   }
 }
 
 #try {
   font-weight: bold;
-  background-color: #FF9000;
+  color: #FF9000;
+  background-color: transparent;
+  border: solid 1.5px #FF9000;
   position: fixed;
   top: 10px;
   right:10px;
+  transition-duration: 0.6s;
+}
+
+#try:hover {
+  color: black;
+  background-color: #FF9000;
+  opacity: 1;
+  transition-duration: 0.4s;
 }
