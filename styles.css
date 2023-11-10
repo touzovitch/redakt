@@ -112,6 +112,7 @@ footer > a:hover {
 }
 
 .copied {
+  margin-top: 15px;
   display: none;
   pointer-events: none;
   color: #0FCF7E;
